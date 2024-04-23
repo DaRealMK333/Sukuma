@@ -17,15 +17,15 @@ public class GameObjectDestroyer : MonoBehaviour
     }
 
     // ReSharper disable Unity.PerformanceAnalysis
-    public static void BlueBeadDestroyer(int i)
+    public static void BlueBeadDestroyer(int BeadNumber)
     {
-        Destroy(GameObject.Find("BlueBead " + (i).ToString() + "(Clone)"));
+        Destroy(GameObject.Find("BlueBead " + (BeadNumber).ToString() + "(Clone)"));
     }
     
     // ReSharper disable Unity.PerformanceAnalysis
-    public static void PurpleBeadDestroyer(int i )
+    public static void PurpleBeadDestroyer(int BeadNumber )
     { 
-        Destroy(GameObject.Find("PurpleBead " + (i).ToString() + "(Clone)")); 
+        Destroy(GameObject.Find("PurpleBead " + (BeadNumber).ToString() + "(Clone)")); 
     }
 
     // ReSharper disable Unity.PerformanceAnalysis

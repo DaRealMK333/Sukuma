@@ -725,7 +725,7 @@ MonoBehaviour:
   CanvaRestart: {fileID: 376418876}
   BlueWinTxt: {fileID: 1973255624}
   PurpleWinTxt: {fileID: 512279159}
-  ScoreScript: {fileID: 719089045}
+  trackerScript: {fileID: 0}
 --- !u!4 &719089047
 Transform:
   m_ObjectHideFlags: 0
@@ -1094,7 +1094,62 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   CircleHighlight: {fileID: 8876109796232441061, guid: 6801c76cd1e244d4ea5a68fb3780d6eb, type: 3}
+  ArrBlueBeadName:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  ArrPurpleBeadName:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   Destroyer: {fileID: 0}
+  _TrackerScript: {fileID: 0}
 --- !u!1 &1801875901
 GameObject:
   m_ObjectHideFlags: 0

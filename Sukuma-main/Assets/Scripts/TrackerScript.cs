@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,10 @@ using UnityEngine.UI;
 
 public class TrackerScript : MonoBehaviour
 {
+    private void Start()
+    {
+        BlueScore = PurpleScore = 26;
+    }
 
     public enum Score
     {
@@ -16,7 +21,7 @@ public class TrackerScript : MonoBehaviour
     public int MinScore = 0;
     public UIManager uiManager;
 
-    private int BlueScore
+    public int BlueScore
     {
         get { return blueScore; }
         set
@@ -26,7 +31,7 @@ public class TrackerScript : MonoBehaviour
                 uiManager.showRestart(false);         
         }
     }
-    private int PurpleScore
+    public int PurpleScore
     {
         get { return purpleScore; }
         set
@@ -38,7 +43,7 @@ public class TrackerScript : MonoBehaviour
     }
 
 
-    public void Increment(Score whichScore)
+    public void Decrement(Score whichScore)
     {
         if (whichScore == Score.BlueScore)
         {
@@ -47,6 +52,18 @@ public class TrackerScript : MonoBehaviour
         else
         {
             PurpleScoretxt.text = (--PurpleScore).ToString();
+        }
+    }
+    
+    public void Increment(Score whichScore)
+    {
+        if (whichScore == Score.BlueScore)
+        {
+            BlueScoretxt.text = (++BlueScore).ToString();
+        }
+        else
+        {
+            PurpleScoretxt.text = (++PurpleScore).ToString();
         }
     }
 

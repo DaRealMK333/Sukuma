@@ -1,1 +1,2 @@
 # Sukuma
+git reset --merge
